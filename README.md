@@ -2,6 +2,11 @@
 
 A package for quantum computation.
 
+## Env
+
+ - Pytest
+ - Numpy 1.21.5
+ - Scipy 1.9.1
 
 ## Example Usage
 
