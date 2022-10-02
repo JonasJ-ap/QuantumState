@@ -1,4 +1,3 @@
-import pytest
 from quantum import QuantumState
 import quantum
 import numpy as np
