@@ -2,7 +2,7 @@
 
 A package for quantum computation.
 
-## Requirement
+## Requirements
 
  - Numpy 1.21.5
  - Scipy 1.9.1
