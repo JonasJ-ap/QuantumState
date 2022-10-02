@@ -10,7 +10,7 @@ A package for quantum computation.
 ## Example Usage
 
 ```
-from quantum import QuantumState
+from pyquantum.quantum import QuantumState
 
 qs = QuantumState(2) # create a quantum state containing 2 qubits
 
