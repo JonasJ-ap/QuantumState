@@ -6,7 +6,7 @@ A package for quantum computation.
 ## Example Usage
 
 ```
-import quantum
+from quantum import QuantumState
 
 qs = QuantumState(2) # create a quantum state containing 2 bits
 
