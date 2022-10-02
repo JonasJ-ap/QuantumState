@@ -1,5 +1,5 @@
-from quantum import QuantumState
-import quantum
+from pyquantum.quantum import QuantumState
+from pyquantum import quantum
 import numpy as np
 
 amplitudes = "[0.12,0,0,1]"
