@@ -2,9 +2,8 @@
 
 A package for quantum computation.
 
-## Env
+## Requirement
 
- - Pytest
  - Numpy 1.21.5
  - Scipy 1.9.1
 
