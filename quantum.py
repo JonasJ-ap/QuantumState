@@ -3,7 +3,7 @@ import scipy as sp
 
 BINARY = 2
 PROP_INITIAL_STATE = "initial_state"
-PROP_INITIAL_AMPLITUDE = "initial_amplitude"
+PROP_INITIAL_AMPLITUDE = "initial_amplitudes"
 
 AVG_DIV_RATIO = 0.5
 HADAMARD_RATIO = np.sqrt(0.5)
@@ -14,7 +14,7 @@ def string_to_amplitudes(s: str) -> np.ndarray:
     str_seq = str_inner.split(',')
     result_state = np.zeros(len(str_seq))
     for i in range(len(str_seq)):
-        result_state[i] = int(str_seq[i])
+        result_state[i] = float(str_seq[i])
     return result_state
 
 
@@ -41,6 +41,13 @@ class QuantumState:
 
     def get_bit_num(self):
         return self.bitNum
+
+    def is_normalized(self):
+        return np.sum(self.state**2) == 1
+
+    def normalize(self):
+        self.state /= np.linalg.norm(self.state)
+        return self
 
     def add_diff_all(self):
         self.state = np.matmul(sp.linalg.hadamard(self.dim), self.state.T)
